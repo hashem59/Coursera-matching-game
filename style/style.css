@@ -13,20 +13,22 @@
 
     img {
         position: absolute;
+        height: 85px;
     }
 
     div {
 
-        width:50vw;
-        height:calc(100vh - 100px);
+        width:48vw;
+        height:calc(100vh - 150px);
         float: left;
         position: absolute;
-        border-right: 1px solid black;
 
     }
 
     #rightSide {
 
         position: absolute;
-        left: 50vw;
+        left: 48vw;
+        border-left: 1px solid black;
+
     }
