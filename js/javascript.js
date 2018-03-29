@@ -60,7 +60,7 @@ var numberOfFaces = 5;
    }
      theBody.onclick = function gameOver() {
 
-       alert("Game Over!");
+       alert("Game Over! Refresh the page and try again");
 
        theBody.onclick = null;
 
