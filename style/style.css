@@ -1,0 +1,32 @@
+    
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: #02B3E4;
+    }
+
+
+    img {
+        position: absolute;
+    }
+
+    div {
+
+        width:50vw;
+        height:calc(100vh - 100px);
+        float: left;
+        position: absolute;
+        border-right: 1px solid black;
+
+    }
+
+    #rightSide {
+
+        position: absolute;
+        left: 50vw;
+    }
