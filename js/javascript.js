@@ -51,7 +51,7 @@ var numberOfFaces = 5;
 
        event.stopPropagation();
 
-       numberOfFaces += 5;
+       numberOfFaces += 3;
 
        generateFaces();
 
