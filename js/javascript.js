@@ -8,6 +8,14 @@ var numberOfFaces = 5;
 
    var theBody = document.getElementsByTagName("body")[0];
 
+
+   var w = theRightSide.clientWidth;
+
+   //w = w - 80px;
+
+   var h = theLeftSide.clientHeight;
+
+
    function generateFaces() {
 
      "use strict";
@@ -24,9 +32,25 @@ var numberOfFaces = 5;
 
      for (i = 0; i < numberOfFaces; ++ i) {
 
-       var top_position = Math.floor((Math.random() * 400));
+       var top_position = Math.floor((Math.random() * h));
 
-       var left_position = Math.floor((Math.random() * 400));
+       if (top_position > 400) {
+        top_position = top_position - 80;
+       }
+
+        
+
+       var left_position = Math.floor((Math.random() * w));
+
+       if (left_position < 80){
+        left_position = left_position + 50;
+       } else {
+        left_position = left_position - 50;
+       }
+
+
+
+       
 
        var smile_img = document.createElement("img");
 
@@ -67,3 +91,4 @@ var numberOfFaces = 5;
        theLeftSide.lastChild.onclick = null;
 
      }; 
+
